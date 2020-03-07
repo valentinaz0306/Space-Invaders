@@ -1,0 +1,30 @@
+package main;
+
+public class Heroe extends Actor{
+	// variables globales 
+	
+	int vel1=3;
+	
+	public Heroe(int posX,int posY) {
+		super(posX,posY);	
+	}
+	
+	public void move() {
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

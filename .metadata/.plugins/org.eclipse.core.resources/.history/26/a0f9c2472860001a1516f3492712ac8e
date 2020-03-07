@@ -1,0 +1,9 @@
+package controlador;
+
+public class HeroeControlador {
+
+	public HeroeControlador() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

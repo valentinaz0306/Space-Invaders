@@ -1,0 +1,9 @@
+package main;
+
+public class Heroe {
+
+	public Heroe() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

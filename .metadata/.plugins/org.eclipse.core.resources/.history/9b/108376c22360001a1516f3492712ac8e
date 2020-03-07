@@ -1,0 +1,41 @@
+package main;
+
+public class Heroe extends Actor{
+	// variables globales 
+	
+	int vel1=3;
+	int tam=80;
+	
+	public Heroe(int posX,int posY) {
+		super(posX,posY);	
+	}
+	
+	public void move(int movi) {
+		
+		//movimiento en X
+		if (this.getPosX()<=600 && this.getPosX()>=200) {
+		//Suma vel
+			this.setPosX(getPosX()+ vel1 * movi);
+			
+		}	
+		
+	}
+	
+	public void disparar() {
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

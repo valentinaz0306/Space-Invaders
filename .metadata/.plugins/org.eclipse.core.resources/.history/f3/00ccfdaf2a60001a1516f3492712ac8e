@@ -1,0 +1,20 @@
+package controlador;
+
+import modelo.Heroe;
+import vista.HeroeVista;
+
+public class HeroeControlador {
+	private Heroe modelo;
+	private HeroeVista vista;
+	public HeroeControlador(Heroe modelo,HeroeVista vista) {
+		this.modelo = modelo;
+		this.vista = vista;
+	}
+	public void move(int movi) {
+		modelo.move(movi);
+	}
+	public void pintar(){
+		vista.pintarHeroe(modelo.getPosX(), modelo.getPosY(), modelo.getTam());
+	}
+
+}

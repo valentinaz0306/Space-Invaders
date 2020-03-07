@@ -1,0 +1,10 @@
+package controlador;
+
+public class HeroeControlador {
+	private Heroe modelo;
+	private HeroeVista vista;
+	public HeroeControlador() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

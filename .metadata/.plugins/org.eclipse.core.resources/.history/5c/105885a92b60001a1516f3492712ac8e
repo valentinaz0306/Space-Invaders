@@ -1,0 +1,9 @@
+package modelo;
+
+public class Balas {
+
+	public Balas() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

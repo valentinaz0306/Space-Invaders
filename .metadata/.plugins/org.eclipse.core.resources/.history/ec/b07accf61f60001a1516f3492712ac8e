@@ -1,0 +1,74 @@
+package main;
+
+import processing.core.PApplet;
+import java.util.ArrayList;
+
+public class Main extends PApplet {
+	
+	// lista de nemigos
+	ArrayList<Enemigo> enemigos = new ArrayList<Enemigo>();
+	
+	// variable contador para separar enmigos
+	int cont=0;
+	
+	public static void main(String[] args) {
+		
+		PApplet.main("main.Main");
+
+	}
+	public void settings() {
+		size(800,800);
+		
+	}
+	
+	
+	public void setup() {
+				
+	}
+	
+	public void draw() {
+		
+		background(0);
+		
+		//pintar enemigos
+		if(cont%25==0 && enemigos.size()<10) {	
+		enemigos.add(new Enemigo(200,200));
+		}
+		// recorrer arraylist para pintar enemigos
+		for(int i=0;i<enemigos.size();i++) {
+			rect(enemigos.get(i).getPosX(),enemigos.get(i).getPosY(),enemigos.get(i).getTamano(),enemigos.get(i).getTamano());
+			enemigos.get(i).move();
+		}
+		cont++;
+		System.out.println("enemigos: "+enemigos.size());
+		System.out.println("cont: "+cont);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}// cierre main 

@@ -1,0 +1,14 @@
+package controlador;
+
+import modelo.Enemigo;
+import vista.EnemigoVista;
+
+public class EnemigoControlador {
+	private Enemigo modelo;
+	private EnemigoVista vista;
+	public EnemigoControlador(Enemigo modelo,EnemigoVista vista) {
+		this.modelo = modelo;
+		this.vista = vista;
+	}
+
+}

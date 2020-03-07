@@ -1,0 +1,9 @@
+package modelo;
+
+public class Balas extends Actor{
+
+	public Balas(int posX,int posY) {
+		super(posX,posY);
+	}
+
+}

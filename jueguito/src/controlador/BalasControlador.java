@@ -1,0 +1,35 @@
+package controlador;
+
+import modelo.Balas;
+import vista.BalasVista;
+
+public class BalasControlador {
+	private Balas modelo;
+	private BalasVista vista;
+	//constructor
+	public BalasControlador(Balas modelo,BalasVista vista) {
+		this.modelo = modelo;
+		this.vista = vista;
+	}
+	public void move() {
+		modelo.move();
+	}
+	public void pintar(){
+		vista.pintarBalas(modelo.getPosX(), modelo.getPosY(), modelo.getTam());
+	}
+	public void setPosX(int posX) {
+		modelo.setPosX(posX);
+	}
+	public void setPosY(int posY) {
+		modelo.setPosY(posY);
+	}
+	public int getPosX(){
+		return modelo.getPosX();
+	}
+	public int getPosY(){
+		return modelo.getPosY();
+	}
+	public int getTamano() {
+		return modelo.getTam();
+	}
+}

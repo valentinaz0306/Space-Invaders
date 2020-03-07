@@ -1,0 +1,9 @@
+package controlador;
+
+public class BalasControlador {
+
+	public BalasControlador() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
