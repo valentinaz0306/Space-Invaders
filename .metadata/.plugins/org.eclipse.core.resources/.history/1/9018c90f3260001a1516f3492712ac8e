@@ -68,18 +68,17 @@ public class Main extends PApplet {
 		}
 		
 		// eliminar enemigo de arraylist
-	
+		
+		enemigos.remove(1);
 		for(int i=0; i<enemigos.size();i++) {
-			for(int j=0; j< balas.size();j++) {
+			for(int j=0; j< balas.size();i++) {
 				if(balas.get(j).getPosX()>= enemigos.get(i).getPosX() &&
-					balas.get(j).getPosX()<= enemigos.get(i).getPosX()+enemigos.get(i).getTamano()&&
+					balas.get(j).getPosX()<= enemigos.get(i).getPosX()+  enemigos.get(i).getTamano()&&
 					balas.get(j).getPosY()>= enemigos.get(i).getPosY() &&
-					balas.get(j).getPosY()<= enemigos.get(i).getPosY()+enemigos.get(i).getTamano()) {
+					balas.get(j).getPosY()<= enemigos.get(i).getPosY()+  enemigos.get(i).getTamano()) {
 					
-					enemigos.remove(i);
-					balas.remove(j);
 					
-					break;
+					
 				}
 			}	
 			
