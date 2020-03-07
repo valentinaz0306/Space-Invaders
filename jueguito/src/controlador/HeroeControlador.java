@@ -31,5 +31,12 @@ public class HeroeControlador {
 	public int getTam(){
 		return modelo.getTam();
 	}
-
+	// get and sets vidaaa
+	public int getVida(){
+		return modelo.getVida();
+	}
+	public void setVida(int Vida){
+		 modelo.setVida(Vida);
+	}
+ 
 }

@@ -3,9 +3,18 @@ package modelo;
 public class Heroe extends Actor{
 	// variables globales 
 	
-	int vel1=30;
-	int tam=80;
+	private int vel1=30;
+	private int tam=80;
+	private int vida= 3; 
 	
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
 	public int getTam() {
 		return tam;
 	}
