@@ -67,7 +67,15 @@ public class Main extends PApplet {
 			balas.get(i).move();
 		}
 		
-		// PINTA HEROE 
+		
+		
+		
+		
+		//System.out.println("enemigos: "+enemigos.size());
+		//System.out.println("cont: "+cont);
+		
+		
+	// PINTA HEROE 
 	
 		ayuda.pintar();
 		
@@ -93,7 +101,7 @@ public class Main extends PApplet {
 		if(key == 32) {
 			//nuevo modelo de bala 
 			//crea una nueva bala en la pos del heroe 
-			Balas nMBala = new Balas(ayuda.getPosX()+ ayuda.getTam()/2, ayuda.getPosY());
+			Balas nMBala = new Balas(ayuda.getPosX(), ayuda.getPosY());
 			//nueva vista bala
 			BalasVista nVBala = new BalasVista(this);
 			//

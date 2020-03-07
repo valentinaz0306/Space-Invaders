@@ -5,13 +5,10 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 
-import modelo.Balas;
 import modelo.Enemigo;
 import modelo.Heroe;
-import vista.BalasVista;
 import vista.HeroeVista;
 import vista.EnemigoVista;
-import controlador.BalasControlador;
 import controlador.EnemigoControlador;
 import controlador.HeroeControlador;
 
@@ -19,9 +16,6 @@ public class Main extends PApplet {
 	
 	// lista de enemigos
 	ArrayList<EnemigoControlador> enemigos = new ArrayList<EnemigoControlador>();
-	
-	// lista de balas
-	ArrayList<BalasControlador> balas = new ArrayList<BalasControlador>();
 	
 	//CREAR OBJETO TIPO HEROE
 	Heroe modelo = new Heroe(200,600);
@@ -52,22 +46,17 @@ public class Main extends PApplet {
 		if(cont%25==0 && enemigos.size()<12) {	
 		enemigos.add(new EnemigoControlador(new Enemigo(200,200),new EnemigoVista(this)));
 		}
-		cont++;
-		
 		// recorrer arraylist para pintar enemigos
 		for(int i=0;i<enemigos.size();i++) {
 			enemigos.get(i).pintar();
 			enemigos.get(i).move();
 		}
+		cont++;
+		//System.out.println("enemigos: "+enemigos.size());
+		//System.out.println("cont: "+cont);
 		
-		// recorrer arraylist para pintar balas
 		
-		for(int i=0;i<balas.size();i++) {
-			balas.get(i).pintar();
-			balas.get(i).move();
-		}
-		
-		// PINTA HEROE 
+	// PINTA HEROE 
 	
 		ayuda.pintar();
 		
@@ -90,16 +79,8 @@ public class Main extends PApplet {
 			
 		}
 		
-		if(key == 32) {
-			//nuevo modelo de bala 
-			//crea una nueva bala en la pos del heroe 
-			Balas nMBala = new Balas(ayuda.getPosX()+ ayuda.getTam()/2, ayuda.getPosY());
-			//nueva vista bala
-			BalasVista nVBala = new BalasVista(this);
-			//
-			balas.add(new BalasControlador(nMBala,nVBala));	
-			
-		}
+		
+		
 	}
 	
 	

@@ -67,7 +67,15 @@ public class Main extends PApplet {
 			balas.get(i).move();
 		}
 		
-		// PINTA HEROE 
+		
+		
+		
+		
+		//System.out.println("enemigos: "+enemigos.size());
+		//System.out.println("cont: "+cont);
+		
+		
+	// PINTA HEROE 
 	
 		ayuda.pintar();
 		

@@ -5,10 +5,8 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 
-import modelo.Balas;
 import modelo.Enemigo;
 import modelo.Heroe;
-import vista.BalasVista;
 import vista.HeroeVista;
 import vista.EnemigoVista;
 import controlador.BalasControlador;
@@ -61,13 +59,20 @@ public class Main extends PApplet {
 		}
 		
 		// recorrer arraylist para pintar balas
+				for(int i=0;i<enemigos.size();i++) {
+					enemigos.get(i).pintar();
+					enemigos.get(i).move();
+				}
 		
-		for(int i=0;i<balas.size();i++) {
-			balas.get(i).pintar();
-			balas.get(i).move();
-		}
 		
-		// PINTA HEROE 
+		
+		
+		
+		//System.out.println("enemigos: "+enemigos.size());
+		//System.out.println("cont: "+cont);
+		
+		
+	// PINTA HEROE 
 	
 		ayuda.pintar();
 		
@@ -90,16 +95,8 @@ public class Main extends PApplet {
 			
 		}
 		
-		if(key == 32) {
-			//nuevo modelo de bala 
-			//crea una nueva bala en la pos del heroe 
-			Balas nMBala = new Balas(ayuda.getPosX()+ ayuda.getTam()/2, ayuda.getPosY());
-			//nueva vista bala
-			BalasVista nVBala = new BalasVista(this);
-			//
-			balas.add(new BalasControlador(nMBala,nVBala));	
-			
-		}
+		
+		
 	}
 	
 	
