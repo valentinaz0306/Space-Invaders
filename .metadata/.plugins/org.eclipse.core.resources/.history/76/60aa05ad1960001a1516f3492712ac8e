@@ -1,0 +1,57 @@
+package main;
+
+import processing.core.PApplet;
+
+public class Main extends PApplet {
+	Enemigo pintar= new Enemigo(200,200);
+	public static void main(String[] args) {
+		
+		PApplet.main("main.Main");
+
+	}
+	public void settings() {
+		size(800,800);
+		
+	}
+	
+	
+	public void setup() {
+		
+		//objeto de tipo enemigo		
+	}
+	
+	public void draw() {
+		
+		background(0);
+		rect(pintar.getPosX(), pintar.getPosY(),pintar.getTamano(),pintar.getTamano());
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}// cierre main 

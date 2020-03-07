@@ -1,0 +1,20 @@
+package main;
+
+public class Enemigo extends Actor {
+
+	private int vel=5;
+	
+	public Enemigo(int posX,int posY) {
+		super(posX,posY);
+		
+	}
+public move() {
+	
+	if (this.getPosX()<=600 && this.getPosX()>=200) {
+	
+		this.setPosX(getPosX()+ vel);
+		
+	} else if (this.getPosX()>
+	
+}
+}

@@ -1,0 +1,34 @@
+package main;
+
+public class Enemigo extends Actor {
+
+	private int vel=3;
+	private int tamano=50;
+	
+	public int getTamano() {
+		return tamano;
+	}
+	public void setTamano(int tamano) {
+		this.tamano = tamano;
+	}
+	public Enemigo(int posX,int posY) {
+		super(posX,posY);
+		
+	}
+	// movimiento enemigos
+public void move() {
+	//movimiento en X
+	if (this.getPosX()<=600 && this.getPosX()>=200) {
+	//Suma vel
+		this.setPosX(getPosX()+ vel);
+		//bajar en Y
+	} else {
+		this.setPosY(this.getPosY()+ 80);
+		//cambiar pos en x negativo 
+		this.vel= -vel;
+		this.setPosX(getPosX()+ vel);
+	}
+		
+	
+}
+}

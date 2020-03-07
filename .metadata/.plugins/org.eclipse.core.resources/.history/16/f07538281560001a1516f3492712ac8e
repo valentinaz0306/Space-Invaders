@@ -1,0 +1,9 @@
+package main;
+
+public class Enemigo extends Actor {
+
+	public Enemigo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

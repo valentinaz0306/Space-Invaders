@@ -1,0 +1,9 @@
+package main;
+
+public abstract class Actor {
+
+	public Actor() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
